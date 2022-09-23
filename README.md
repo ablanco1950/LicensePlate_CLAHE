@@ -38,11 +38,11 @@ References:
 
 https://www.mo4tech.com/opencv-contrast-constrained-adaptive-histogram-equalization.html
 
-https://programmerclick.com/article/89421544914/
 
 #https://towardsdatascience.com/image-enhancement-techniques-using-opencv-and-python-9191d5c30d45
 
 
 https://riull.ull.es/xmlui/bitstream/handle/915/10237/Umbralizacion%20adaptativa%20de%20imagenes%20based%20en%20histograms%20space%20-%20color.pdf?sequence=1
+
 
 https://www.roboflow.com, where most of the contributed images come from that have been tagged with yolo or the  tool of labeling provided by roboflow
