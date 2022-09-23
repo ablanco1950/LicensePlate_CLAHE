@@ -27,7 +27,7 @@ GetNumberLicensePlateCLAHE.py
 
 Also is included module CLAHETrainingLisencePlateSeveralFiltersCropsAndResizes.py
 
-With its execution 100% success is achieved, since as the name of the  itself module indicates, 50 filters and treatments are considered, some self-made and others standardized. Along with various treatments modifying the dimensions of the crops and resizes. which implies a long execution time.
+With its execution 100% success is achieved, since as the name of the  itself module indicates, 50 classes of filters and treatments are considered, some self-made and others standardized. Along with various treatments modifying the dimensions of the crops and resizes. which implies a long execution time.
 
 This module generates in test6Training/codfilters a file for each car license plate with the code = code_filter* 10 + code_crop_resize. 
 With these files, a Y_train file could be made for treatment by means of CNN or SVM, but no results have been obtained, probably due to
