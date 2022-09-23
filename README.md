@@ -17,7 +17,7 @@ re
 
 imutils
 
-In the download directory you should find the downloaded and must unzip folder:test6Training with all its subfolders, containing the images and image tags needed for the test.
+In the download directory you should find the downloaded and must unzip folder: test6Training with all its subfolders, containing the images and labels needed for the test.
 
 from the download directory, run:
 
