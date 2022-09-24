@@ -17,7 +17,7 @@ re
 
 imutils
 
-In the download directory you should find the downloaded and must unzip folder: test6Training with all its subfolders, containing the images and labels needed for the test. This directory must be in the same directory where is te program GetNumberLicensePlateCLAHE.py ( unziping may create two directorries with te name test6Training an the images may not be founded when executing it)
+In the download directory you should find the downloaded test6Training.zip and must unzip folder: test6Training with all its subfolders, containing the images and labels needed for the test. This directory must be in the same directory where is te program GetNumberLicensePlateCLAHE.py ( unziping may create two directorries with te name test6Training an the images may not be founded when executing it)
 
 from the download directory, run:
 
