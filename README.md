@@ -46,3 +46,10 @@ https://riull.ull.es/xmlui/bitstream/handle/915/10237/Umbralizacion%20adaptativa
 
 
 https://www.roboflow.com, where most of the contributed images come from,  that have been labeled with yolo or the  tool of labeling provided by roboflow
+
+https://learnopencv.com/otsu-thresholding-with-opencv/ 
+
+https://gist.github.com/endolith/334196bac1cac45a4893#
+
+https://stackoverflow.com/questions/46084476/radon-transformation-in-python
+
