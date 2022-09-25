@@ -451,6 +451,42 @@ def loadimagesRoboflow (dirname):
                 
                  image = cv2.imread(filepath)
                  
+                 #Color Balance
+                #https://blog.katastros.com/a?ID=01800-4bf623a1-3917-4d54-9b6a-775331ebaf05
+                
+                 img = image
+                    
+                 r, g, b = cv2.split(img)
+                
+                 r_avg = cv2.mean(r)[0]
+                
+                 g_avg = cv2.mean(g)[0]
+                
+                 b_avg = cv2.mean(b)[0]
+                
+                 
+                 # Find the gain occupied by each channel
+                
+                 k = (r_avg + g_avg + b_avg)/3
+                
+                 kr = k/r_avg
+                
+                 kg = k/g_avg
+                
+                 kb = k/b_avg
+                
+                 
+                 r = cv2.addWeighted(src1=r, alpha=kr, src2=0, beta=0, gamma=0)
+                
+                 g = cv2.addWeighted(src1=g, alpha=kg, src2=0, beta=0, gamma=0)
+                
+                 b = cv2.addWeighted(src1=b, alpha=kb, src2=0, beta=0, gamma=0)
+                
+                 
+                 balance_img = cv2.merge([b, g, r])
+                 
+                 image=balance_img
+                 
                    
                  images.append(image)
                  Licenses.append(License)
