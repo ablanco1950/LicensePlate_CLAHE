@@ -650,7 +650,19 @@ def FindLicenseNumber (gray,x_center,y_center, width,heigh, x_offset, y_offset, 
            return 29 
            #break
 
-   
+       gray1= cv2.bilateralFilter(gray,3, 75, 75) 
+       gray1 = cv2.Canny(gray1,200,255)    
+       #ret, gray1 = cv2.threshold(gray, 240, 255, 1)
+       gray1= 255 - gray1
+       text = pytesseract.image_to_string(gray1, lang='eng',  \
+       config='--psm 13 --oem 3 -c tessedit_char_whitelist= ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 ')
+      
+       text = ''.join(char for char in text if char.isalnum())
+       
+       if text==Licenses[i]:
+           print(text + "  Hit with Canny filter" )
+           TotHits=TotHits+1
+           return 30
      
    
     print(Licenses[i] + " NOT RECOGNIZED")
